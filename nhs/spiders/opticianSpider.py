@@ -96,7 +96,12 @@ class OpticianSpider(scrapy.Spider):
             website =self._get_website()
             email = self._get_email()
 
-
+            print(f"name: {name}")
+            print(f"address: {address}")
+            print(f"phone: {phone}")
+            print(f"website: {website}")
+            print(f"email: {email}")
+            
             yield Optician(
                 name=name,
                 address=address,
